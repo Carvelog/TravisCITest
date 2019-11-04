@@ -7,3 +7,8 @@ jobs:
       script: npm run start
     - stage: test
       script: npm test
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: "c2ce3736-fd94-47f3-8309-c1b6cee85873"
