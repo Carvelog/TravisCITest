@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node index.js",
-    "start": "echo start command"
+    "test": "jest",
+    "start": "node src/index.js"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,30 @@
   "bugs": {
     "url": "https://github.com/bolften/TravisCITest/issues"
   },
-  "homepage": "https://github.com/bolften/TravisCITest#readme"
+  "homepage": "https://github.com/bolften/TravisCITest#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "jest": "^24.9.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "moduleDirectories": [
+      "./node_modules",
+      "./src"
+    ],
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "mjs"
+    ],
+    "transform": {
+      "^.+\\.(js|jsx|ts|tsx|mjs)$": "babel-jest"
+    },
+    "testMatch": [
+      "<rootDir>/src/*.test.js"
+    ]
+  }
 }

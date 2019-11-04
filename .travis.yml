@@ -5,3 +5,5 @@ jobs:
   include:
     - stage: start
       script: npm run start
+    - stage: test
+      script: npm test
