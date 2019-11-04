@@ -1,4 +1,4 @@
-import { print } from "./greeting"
+import { print } from "../src/greeting"
 
 describe("Hello", () => {
   it("Say hi to Pepe", () => {
