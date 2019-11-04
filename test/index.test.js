@@ -1,7 +1,5 @@
-import { print } from "../src/greeting"
-
-describe("Hello", () => {
-  it("Say hi to Pepe", () => {
-    expect(print("Pepe")).toEqual("Hello Pepe!")
-  })
-})
+describe('sum', () => {
+  test('should sum two numbers', () => {
+      expect(2 + 2).toBe(4);
+  });
+});
