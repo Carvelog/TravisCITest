@@ -4,6 +4,7 @@
   "description": "Blank template project starter-kit with Parcel Bundler",
   "main": "src/index.html",
   "scripts": {
+    "test": "aqui va el comando jest",
     "dev": "parcel serve $npm_package_main --open",
     "watch": "parcel watch $npm_package_main",
     "build:gh-pages": "rm -rf build/* && parcel build $npm_package_main -d build --public-url /$npm_package_name/",
