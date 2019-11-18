@@ -5,6 +5,7 @@ branches:
   only:
     - travis2
 deploy:
+  local_dir: dist
   provider: pages
   skip_cleanup: true
   github_tokens: $GITHUB_TOKEN
