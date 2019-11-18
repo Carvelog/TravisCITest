@@ -3,7 +3,7 @@ node_js:
 - stable
 branches:
   only:
-  - master
+  - travis2
 env:
   global:
     - REMOTE_PATH=testDir/TravisCITest
