@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - 12.10.0
+- stable
 branches:
   only:
-    - travis2
-deploy:
-  edge: true
-  local_dir: dist
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-  on:
-    branch: travis2
+  - master
+env:
+  global:
+    - REMOTE_PATH=testDir/TravisCITest
+    - REMOTE_USER=travisci
+    - REMOTE_HOST=165.22.77.10
+before_install:
+  - bash scripts/install.sh
+after_success:
+  - bash scripts/deploy.sh
