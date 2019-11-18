@@ -7,7 +7,6 @@ branches:
 after_success:
   -bash scripts/deploy.sh
 deploy:
-  local_dir: build_gh
   provider: pages
   skip_cleanup: true
   github_tokens: $GITHUB_TOKEN
