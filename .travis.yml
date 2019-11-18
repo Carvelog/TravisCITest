@@ -5,6 +5,7 @@ branches:
   only:
     - travis2
 deploy:
+  edge: true
   local_dir: dist
   provider: pages
   skip_cleanup: true
