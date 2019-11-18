@@ -3,9 +3,7 @@ node_js:
   - 12.10.0
 branches:
   only:
-    -build_gh
-after_success:
-  -bash scripts/deploy.sh
+    - travis2
 deploy:
   provider: pages
   skip_cleanup: true
