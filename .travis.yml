@@ -4,6 +4,12 @@ node_js:
 branches:
   only:
   - travis2
+jobs:
+  include:
+    - stage: start
+      script: npm run start
+    - stage: test
+      script: npm test
 env:
   global:
     - REMOTE_PATH=testDir/TravisCITest
